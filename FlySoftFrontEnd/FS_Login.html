@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<head>
+    <title>PlySoft Login</title>
+    <Style>
+.header
+{
+    font-weight: 800;
+    font-size: 30px;
+    color: white;
+    background-color: black;
+    padding: 30px 2px 25px 40px;
+    margin: -10px -10px 0px -10px;
+} 
+.buttons
+{
+    margin-top: 20px;
+}
+.form
+{
+    border: 1px solid white;
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 6px;
+    margin-top: 40px;
+	margin-left: 70px;
+    padding:30px 1px 20px 70px;
+    height: 370px;
+    width:320px;
+    display: relative;
+}
+.credentials
+{
+    display: flex;
+    flex-direction: column;
+    row-gap: 7px;
+    margin-top: 60px;
+}
+.user,
+.password
+{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 22px;
+    font-family: Calibri;
+}
+.user-field,
+.password-field
+{
+    border: none;
+    height: 25px;
+    width: 205px;
+    font-size: 12px;
+    margin-left: -1px;
+}
+.selector
+{
+    border: 1px solid lightblue;
+    height: 25px;
+    width: 220px;
+	font-size: 12px;
+	font-family: Verdana, "CustomFont","CustomFontAR",lato,arial,sans-serif;
+}
+.logo
+{
+	margin:20px;
+}
+.login-button
+{
+    padding: 5px 8px;
+    border-radius: 0px;
+    border-top: 1px solid #b68a35;
+    border-bottom: 1px solid #b68a35;
+    border-left: 1px solid #b68a35;
+    border-right: 1px solid #b68a35;
+    color: #b68a35;
+    background: #ffffff;
+    font-size: 13px;
+    font-weight: 700;
+    padding-left:15px;
+    padding-right:15px;
+    text-transform: uppercase;
+    font-family: "CustomFont","CustomFontAR",lato,arial,sans-serif;
+}
+.user-icon-field
+{
+	display: flex;
+	flex-direction: row;
+	row-gap:10px;
+}
+.username-image
+{
+	height:27px;
+	border: none;
+}
+.password-image
+{
+	height: 16px;
+    padding: 6px 2px 5px 5px;
+    background-color: white;
+}
+    </Style>
+</head>
+<body style="background-color: RGB(27,84,150);">
+    <div class="header">
+        PlyFly
+    </div>
+    <div class="form">
+        <form method="post" id = "login">
+            <div class="credentials">
+                <div class="user">
+                    <div class="user-label" style="color: white; margin-bottom: 2px; font-size: 14px;">
+                        User Name
+                    </div>
+                    <div class="user-icon-field">
+                    <img class="username-image" src="username_icon.jpg">
+                    <input class="user-field" type="text" 
+                    name="userName" id="userName">
+                    </div>
+                </div>
+                <div class="password">
+                    <div class="password-label" style="color: white; margin-bottom: 2px; font-size: 14px;">
+                        Password
+                    </div>
+                    <div class="user-icon-field">
+                    <img class="password-image" src="password_icon.png">
+                    <input class="password-field" type="password"
+                    name="password" id="password">
+                    </div>
+                </div>
+            </div>
+            <div class="buttons">
+                <button class="login-button" type="submit">
+                    LOG IN
+                </button>
+                <button class="login-button" onsubmit="return false;" onclick="cleanForm()">
+                    Cancel
+                </button>
+            </div>
+        </form> 
+    </div>
+</body>
